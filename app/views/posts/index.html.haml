@@ -1,5 +1,5 @@
 - @posts.each do |post|
+	= link_to (image_tag post.image.url(:small))
 	%h2= link_to post.title, post
 
 = link_to "Add New Inspriation", new_post_path
-= link_to "log out", destroy_user_session_path, method: :delete
